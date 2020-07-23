@@ -12,25 +12,29 @@ Pandas
 
 ```
 Windows & Mac
-*pip install pandas
+pip install pandas
 ```
 
 openpyxl
 ```
 Windows & Mac
-*pip install openpyxl
+pip install openpyxl
 ```
 
 ## Running the tests
 
 To run
 
-```
-Make sure there is an empty xlsx file named "Sorted_Stocks.xlsx"
-
-Run the python file with: python sorter2.py
+Sidenote: It is necessary to run Ticker_Adder.py to all files before running Sorter2.py. The current upload of the csv files has Ticker_Adder.py already ran on, meaning if you download the original csv files from here, you don't need to run Ticker_Adder.py. If you are using your own csv files, run Ticker_Adder, then run sorter2.py.
 
 ```
+If using Ticker_Adder first run: python Ticker_Adder.py
+
+Then run sorter2.py: python sorter2.py
+
+
+```
+**Running the above commands will take a long time depending on how many files there are**
 
 ## Built With
 
