@@ -15,7 +15,7 @@ counter = 0
 for file in files:
     if file.endswith ('.csv'):
         all_df_list.append(pd.read_csv(file))
-        if(len(all_df_list) > 10):
+        if(len(all_df_list) > 50):
             counter = counter + 1
             appended_df = pd.concat(all_df_list)
             appended_df.to_excel(writer, sheet_name = 'Set' + str(counter))
